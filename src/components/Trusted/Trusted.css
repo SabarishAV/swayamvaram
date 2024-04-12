@@ -1,0 +1,251 @@
+.slider {
+    margin: 0 20px;
+    overflow: "hidden";
+    padding: 2rem 0;
+    background-color: aqua;
+  }
+  
+  .slider img {
+    width: 100%;
+    /* border-radius:10px; */
+  }
+  
+  .react-multi-carousel-list {
+    padding: 0rem 0 2rem 0;
+  }
+  
+  .custom-dot-list-style button {
+    border: none;
+    background: rgb(255, 68, 68);
+  }
+  .react-multi-carousel-dot.react-multi-carousel-dot--active button {
+    background: rgb(255, 68, 68) !important;
+  }
+  
+  
+  .parent
+  {
+    display: flex;
+    flex-direction: column;
+    /* background-color: #7cd7fe; */
+  }
+  .trusted-heading
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    flex-wrap: wrap;
+    color: rgb(102, 12, 12);
+    font-size: 37px;
+  }
+  .rectangle-parent {
+    width: 361px;
+    position: relative;
+    height: 454px;
+    /* margin-left: 50px; */
+  }
+  
+  .frame-child4 {
+    position: absolute;
+    top: 73px;
+    left: 35px;
+    border-radius: 17px;
+    border: 1px solid #898989;
+    box-sizing: border-box;
+    width: 361px;
+    height: 391px;
+    margin-right: 50px;
+  
+  }
+  .frame-child5 {
+    position: absolute;
+    top: 0;
+    left: 37px;
+    width: 146.6px;
+    height: 146.6px;
+    object-fit: contain;
+  }
+  .frame-child6,
+  .frame-child7,
+  .frame-child8 {
+    position: absolute;
+    top: 16px;
+    left: 19px;
+    border: 3px solid #fe7c7c;
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+  }
+  .frame-child7,
+  .frame-child8 {
+    top: 96px;
+    border: 3px solid #ffdf7d;
+  }
+  .frame-child8 {
+    top: 0;
+    left: 159px;
+    border: 3px solid #7cd7fe;
+  }
+  .lorem-ipsum-dolor {
+    padding-top: 168px;
+    padding-left: 50px;
+    line-height: 143.52%;
+    color: #434343;
+    width: 273px;
+    padding-top: 10px;
+  }
+  .anjana {
+    padding-left: 50px;
+  
+    top: 336px;
+    font-size: 20px;
+    font-weight: 500;
+    width: 193px;
+    height: 44px;
+  }
+  .malappuram-kerala {
+    top: 371px;
+    padding-left: 50px;
+  
+    width: 188px;
+    height: 39px;
+  }
+/* ===================================================large screens================================================ */
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  .rectangle-parent
+  {
+    /* background-color: #7cd7fe; */
+    margin-left: 37px;
+  }
+}
+  @media (max-width: 768px) {
+    .trusted-heading
+    {
+      display: flex;
+      flex-direction: column;
+      /* align-items: center; */
+      /* justify-content: center; */
+      margin-top: 70px;
+      margin-bottom: 70px;
+      margin-left: 5%;
+      flex-wrap: wrap;
+      color: rgb(102, 12, 12);
+      font-size: 33px;
+    }
+    .trusted-span
+    {
+      font-size: 32px;
+    }
+    .frame-child4 {
+      position: absolute;
+      top: 73px;
+      left: 10px;
+      border-radius: 17px;
+      border: 1px solid #898989;
+      box-sizing: border-box;
+      width: 361px;
+      height: 391px;
+      margin-right: 50px;
+    
+    }
+  }
+/* ===================================================extra large screens================================================ */
+  
+@media screen and (min-width: 1282px) {
+
+  .parent
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  .trusted-heading
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 90px;
+    flex-wrap: wrap;
+    color: rgb(102, 12, 12);
+    font-size: 47px;
+  }
+  .rectangle-parent {
+    width: 461px;
+    position: relative;
+    height: 454px;
+    margin-left: 70px;
+    padding-right: 300px;
+  }
+  
+  .frame-child4 {
+    position: absolute;
+    top: 73px;
+    left: 12px;
+    border-radius: 17px;
+    /* border: 1px solid #898989; */
+    border: 1px solid #0f0b0b;
+
+    box-sizing: border-box;
+    width: 470px;
+    height: 410px;
+    /* background-color: #898989; */
+
+  
+  }
+  .frame-child5 {
+    position: absolute;
+    top: 0;
+    left: 57px;
+    width: 156.6px;
+    height: 156.6px;
+    object-fit: contain;
+  }
+  .frame-child6,
+  .frame-child7,
+  .frame-child8 {
+    position: absolute;
+    top: 16px;
+    left: 19px;
+    border: 3px solid #fe7c7c;
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+  }
+  .frame-child7,
+  .frame-child8 {
+    top: 96px;
+    border: 3px solid #ffdf7d;
+  }
+  .frame-child8 {
+    top: 0;
+    left: 159px;
+    border: 3px solid #7cd7fe;
+  }
+  .lorem-ipsum-dolor {
+    padding-top: 155px;
+    padding-left: 80px;
+    line-height: 143.52%;
+    color: #434343;
+    width: 273px;
+  }
+  .anjana {
+    padding-left: 80px;
+
+  
+    top: 336px;
+    font-size: 20px;
+    font-weight: 500;
+    width: 193px;
+    height: 44px;
+  }
+  .malappuram-kerala {
+    top: 371px;
+    padding-left: 80px;
+
+  
+    width: 188px;
+    height: 39px;
+  }
+}
