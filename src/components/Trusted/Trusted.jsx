@@ -71,8 +71,7 @@ const Trusted = () => {
           <div className="frame-child8" />
           <div className="lorem-ipsum-dolor">
             I can't thank the Trusted Section enough for the seamless and secure
-            experience it provided. Connecting with like-minded individuals who
-            shared my values and aspirations was truly rewarding.
+            experience it provided. 
           </div>
           <div className="anjana">anjana</div>
           <div className="malappuram-kerala">Trivandrum, Kerala</div>
