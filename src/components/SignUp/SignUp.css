@@ -1,0 +1,20 @@
+.signup-box
+{
+
+}
+@media (min-width: 300px) and (max-width: 575px) {
+    
+    .signup-box {
+      position: absolute;
+      margin-top: 10%;
+      left: 50%;
+      width: 350px;
+      padding: 40px;
+      transform: translate(-50%, -50%);
+      background: rgba(238, 235, 235, 0.5);
+      box-sizing: border-box;
+      box-shadow: 0 15px 25px rgba(92, 55, 55, 0.6);
+      border-radius: 10px;
+    }
+  }
+    

@@ -1,12 +1,13 @@
 import React from 'react'
 import Header from '../Header/Header'
 import { Link } from 'react-router-dom'
+import "./SignUp.css"
 
 const SignUp = () => {
   return (
     <>
       <Header />
-      <div className="login-box">
+      <div className="login-box signup-box">
         <h2>Sign Up</h2>
         <form>
           <div className="user-box">
