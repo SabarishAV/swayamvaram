@@ -36,9 +36,9 @@ const MatchAProfile = () => {
           <div className="data-containers-icons-div">
             <FiPhone className="data-containers-icons" />
           </div>
-          <h2 className="data-containers-h2">Contact </h2>
+          <h2 className="data-containers-h2">Contact Us </h2>
           <div className="data-containers-p-div">
-            Contact them directly if the other person accept your profile.
+          Once you’ve chosen your favourite one we arrange a meeting with your chosen one
           </div>
         </div>
         <div className="data-container-one">
