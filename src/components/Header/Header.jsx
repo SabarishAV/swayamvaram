@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import "./Header.css";
 import { BiMenuAltRight } from "react-icons/bi";
 import { getMenuStyles } from "../../utils/common";
@@ -56,6 +56,7 @@ const Header = () => {
           <BiMenuAltRight size={30} />
         </div>
       </div>
+  
     </section>
   );
 };

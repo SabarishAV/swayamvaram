@@ -5,7 +5,7 @@ import { CiInstagram } from "react-icons/ci";
 const Footer = () => {
   return (
     <footer class="footer">
-      <div class="container">
+      <div class="container-footer">
         <div class="row">
           <div class="footer-col">
             <h4>Get in touch</h4>

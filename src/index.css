@@ -1,69 +1,14 @@
 :root {
   --primary: #1f3e72;
-  --secondary: rgba(255, 255, 255, 0.78);
-  --black: #fff;
+  --headerbg: #252e67;
+  --secondary: #fff;
+  --black: #131110;
   --blue-gradient: linear-gradient(97.05deg, #4066ff 3.76%, #2949c6 100%);
-  --orange-gradient: linear-gradient(270deg, #e6c8ac 0%, #c69568 100%);
+  --orange-gradient: linear-gradient(270deg, #ffb978 0%, #ff922d 100%);
   --blue: #4066ff;
   --lightBlue: #eeeeff;
   --shadow: 0px 23px 21px -8px rgba(136, 160, 255, 0.25);
-
-  /* fonts */
-  --font-inter: Inter;
-  --font-segoe-ui: "Segoe UI";
-  --font-roboto: Roboto;
-
-  /* font sizes */
-  --font-size-sm: 14px;
-  --font-size-lg: 18px;
-  --font-size-base: 16px;
-  --font-size-xl: 20px;
-  --font-size-39xl: 58px;
-  --font-size-5xl: 24px;
-  --font-size-xs: 12px;
-  --font-size-29xl: 48px;
-  --font-size-49xl: 68px;
-  --font-size-13xl: 32px;
-
-  /* Colors */
-  --ffffff: #fff;
-  --color-gray-100: #898989;
-  --color-gray-200: #530f29;
-  --color-gray-300: #1e1e1e;
-  --color-gray-400: #07030f;
   --color-darkorange: #f27405;
-  --color-gold: #ffd600;
-  --color-dimgray-100: #656460;
-  --color-dimgray-200: rgba(98, 94, 94, 0.3);
-  --color-dimgray-300: rgba(98, 94, 94, 0.6);
-  --color-saddlebrown-100: #762401;
-  --color-black: #000;
-  --color-darkslategray-100: #3d4c5e;
-  --color-darkslategray-200: #434343;
-  --color-lightskyblue: #7cd7fe;
-  --color-khaki: #ffdf7d;
-  --color-salmon: #fe7c7c;
-  --foundation-black-light-active: #909dad;
-  --m-primary-3: #038c7f;
-  --foundation-black-normal: #546881;
-
-  /* Gaps */
-  --gap-5xl: 24px;
-  --gap-21xl: 40px;
-  --gap-2xl: 21px;
-
-  /* Paddings */
-  --padding-lg: 18px;
-  --padding-13xl: 32px;
-
-  /* Border radiuses */
-  --br-5xs: 8px;
-  --br-41xl: 60px;
-  --br-14xl: 33px;
-  --br-smi: 13px;
-  --br-mid: 17px;
-  --br-base-6: 15.6px;
-  --br-base-1: 15.1px;
 }
 
 * {
@@ -88,8 +33,13 @@ a {
 .flexCenter {
   display: flex;
   row-gap: 2rem;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+}
+.flexbetween {
+  display: flex;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 .flexStart {
@@ -130,21 +80,40 @@ a {
 }
 
 .secondaryText {
-  color: rgb(242, 233, 233);
-  font-size: 1.1rem;
-  line-height: 2.2rem;
+  color: rgb(140 139 139);
+  font-size: 0.9rem;
 }
 .orangeText {
   color: orange;
   font-size: 1.5rem;
   font-weight: 600;
 }
+.footerhead1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.footer-p-2 {
+  color: #fff;
+  margin-top: 7px;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+.footer-p-2:hover {
+  color: #ee263a;
+  cursor: pointer;
+}
 
 /* media queries */
 @media (min-width: 1536px) {
   .innerWidth {
-    /* max-width: 1280px; */
-    max-width: 1450px;
+    max-width: 1280px;
+    margin: auto;
+  }
+}
+@media (min-width: 1800px) {
+  .innerWidth {
+    max-width: 1340px;
     margin: auto;
   }
 }
@@ -155,18 +124,12 @@ a {
   }
 }
 
-@media (max-width: 1280px), (min-width: 768px) {
+@media (min-width: 1280px), (min-width: 768px) {
   .paddings {
-    padding: 0rem;
-  }
-  .logo {
-    padding-left: 30px;
-  }
-  .button {
-    margin-right: 30px;
+    padding: 1rem;
   }
 }
-
+/* for mobile screens */
 @media (max-width: 640px) {
   .primaryText {
     font-size: 1.5rem;
@@ -178,8 +141,8 @@ a {
 
 .button {
   font-weight: 700;
-  padding: 0.5rem 1.5rem;
-  border-radius: var(--br-14xl);
+  padding: 0.7rem 1.5rem;
+  border-radius: 30px;
   border: 1px solid var(--color-darkorange);
   transition: all 300ms ease-in;
   color: var(--color-darkorange);
@@ -187,12 +150,20 @@ a {
 .button:hover {
   cursor: pointer;
   transform: scale(1.1);
-
+}
+.register-button {
+  font-weight: 700;
+  padding: 17px 40px;
+  border-radius: 30px;
+  border: 1px solid var(--color-darkorange);
+  transition: all 300ms ease-in;
+  color: rgb(95, 8, 8);
+  background-color: #ffd600;
 }
 
-.spinner-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
+/* 300 to 566
+567 to 767
+768 to 991
+992 to 1124
+1125 to 1999
+2000 to  */

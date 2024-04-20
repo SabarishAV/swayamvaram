@@ -1,28 +1,58 @@
-import "./App.css";
-import Pages from "./Pages";
+import './App.css';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
+import Home from './pages/Home/Home';
+import  { ContactUs } from './pages/Contact/Contactprev';
+import Login from './pages/Login/Login';
+import Register from './pages/register/Register';
 
-import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
-import Contact from "./components/Contact/Contact";
-import Profile from "./components/Profile/Profile";
-import Login from "./components/Login/Login";
-import SignUp from "./components/SignUp/SignUp";
+const Layout = () => {
+  return (
+    <div className="App">
+      <div>
+        <div className="white-gradient" />
+        <Header />
+        <Outlet />
+        <Footer />
+      </div>
+    </div>
+  );
+};
+
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Layout />,
+    children: [
+      {
+        path: '/',
+        element: <Home/>,
+      },
+      {
+        path: '/contact',
+        element: <ContactUs />,
+      },
+      
+      {
+        path: '/login',
+        element: <Login />,
+      },
+      {
+        path: '/sign-up',
+        element: <Register />,
+      },
+    ],
+  },
+]);
+
 
 function App() {
   return (
-    <>
-      {/* <Pages/> */}
-
-      <Router>
-        <Routes>
-          <Route exact path="/" element={<Pages />} />
-          <Route exact path="Contact" element={<Contact />} />
-          <Route exact path="Profile" element={<Profile />} />
-          <Route exact path="Login" element={<Login />} />
-          <Route exact path="SignUp" element={<SignUp />} />
-
-        </Routes>
-      </Router>
-    </>
+    <div>
+      <RouterProvider router={router} />
+    </div>
   );
 }
 
