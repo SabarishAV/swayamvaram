@@ -105,7 +105,10 @@
     display: flex;
     flex-direction: column;
   }
-
+.bottom-images-3
+{
+  display: none;
+}
   .collection-left {
     /* margin-left: 22%; */
     color: var(--color-gold);
@@ -185,7 +188,10 @@
   .collection-main {
     margin-top: 140px;
   }
-
+  .bottom-images-3
+  {
+    display: none;
+  }
   .top-collection {
     display: flex;
     justify-content: space-between;
