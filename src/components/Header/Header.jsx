@@ -1,14 +1,27 @@
-import  { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./Header.css";
 import { BiMenuAltRight } from "react-icons/bi";
 import { getMenuStyles } from "../../utils/common";
 import useHeaderColor from "../../hooks/useHeaderColor";
-import OutsideClickHandler from "react-outside-click-handler";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
   const headerColor = useHeaderColor();
+  const menuRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setMenuOpened(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <section className="h-wrapper" style={{ background: headerColor }}>
@@ -17,36 +30,29 @@ const Header = () => {
         <img src="./logo.png" alt="logo" className="logo" width={220} />
 
         {/* menu */}
-        <OutsideClickHandler
-          onOutsideClick={() => {
-            setMenuOpened(false);
-          }}
+        <div
+          ref={menuRef}
+          className="flexCenter h-menu"
+          style={getMenuStyles(menuOpened)}
         >
-          <div
-            // ref={menuRef}
-            className="flexCenter h-menu"
-            style={getMenuStyles(menuOpened)}
+          <Link to="/">Home</Link>
+          <a href="#">About Us</a>
+          <a href="#">FAQ</a>
+          <a href="#">Guide</a>
+          <Link to="/contact">Contact</Link>
+          <a
+            href="#"
+            className="allready-member"
+            style={{ fontSize: "14px", fontWeight: "100" }}
           >
-            <Link to="/">Home</Link>
-            <a href="#">About Us</a>
-            <a href="#">FAQ</a>
-            <a href="#">Guide</a>
-            <Link to="/contact">Contact</Link>
-
-            <a
-              href="#"
-              className="allready-member"
-              style={{ fontSize: "14px", fontWeight: "100" }}
-            >
-              Allready a member ?
-            </a>
-            <Link to="/Login">
-              <button className="button">
-                <a href="">Sign in</a>
-              </button>
-            </Link>
-          </div>
-        </OutsideClickHandler>
+            Already a member?
+          </a>
+          <Link to="/Login">
+            <button className="button">
+              <a href="">Sign in</a>
+            </button>
+          </Link>
+        </div>
 
         {/* for medium and small screens */}
         <div
@@ -56,7 +62,6 @@ const Header = () => {
           <BiMenuAltRight size={30} />
         </div>
       </div>
-  
     </section>
   );
 };

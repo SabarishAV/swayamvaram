@@ -1,46 +1,30 @@
-import "./Hero.css";
-import { fadeIn, staggerContainer } from "../../utils/motion";
-import { motion } from "framer-motion";
+import React from "react";
+import Header from "../Header/Header";
 import { FaStar } from "react-icons/fa";
-import RegisterComponent from "../RegisterComponent";
+import "./Profile.css";
+import Footer from "../Footer/Footer";
+import FindProfileComponent from "../FindProfileComponent";
+import ProfileRight from "../ProfileRight";
 
-const Hero = () => {
+const Profile = () => {
   return (
-    <div className="main-hero">
-      <motion.div
-        variants={staggerContainer}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
-        // className={`innerWidth ${css.container}`}
-      >
+    <>
+      <Header />
+      <div className="main-hero">
         <div className="container">
           <div className="Parent_section">
             <div className="hero-left">
-              <div className="left-heading elevate">
-                <motion.span
-                  className=""
-                  variants={fadeIn("right", "tween", 0.7, 1)}
-                >
-                  <h1 className="elevate">
-                    Elevate your <br /> Love Story with <br />
-                    <span className="swayamvaram-heading elevate">
-                      Swayamvaram.
-                    </span>
-                  </h1>
-                </motion.span>
+              <div className="left-heading">
+                <h1>
+                  Elivate your <br /> Love Story with <br />
+                  <span className="swayamvaram-heading">Swayamvaram.</span>
+                </h1>
               </div>
               <div className="left-paragraph">
                 <p className="sub__text">
-                  Embrace the journey of love. <br />
-                  Where hearts meet and destinies intertwine. <br />
-                  We prepare you for your big day with our matrimonial event
-                  tailored to perfection. Our team of perfect trainers will
-                  groom you, offering fitness advice and other valuable
-                  suggestions to ensure you're at your best when meeting your
-                  match. Let us guide you towards a memorable and successful
-                  encounter, leaving you feeling confident and ready to embrace
-                  the moment.{" "}
+                  Where Destiny and Dedication Intertwine. <br />
+                  Guiding Souls to Perfect Matches Divine. <br />
+                  Embark on Your Journey to Everlasting Love.{" "}
                 </p>
               </div>
 
@@ -73,7 +57,6 @@ const Hero = () => {
                   <p className="rating-content">4.5/5</p>
                 </div>
               </div>
-              <RegisterComponent />
             </div>
             <div className="hero-right">
               <img
@@ -99,9 +82,44 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </motion.div>
-    </div>
+      </div>
+      {/* profile content */}
+      <div className="profile-main">
+        <div className="profile-left">
+          <div className="head-section-profile">
+            <h2>Find that special </h2>
+            <h2>someone.</h2>
+          </div>
+          <div className="sub-left-profile">
+            <p>By gender</p>
+            <p>Groom</p>
+            <p>Bride</p>
+          </div>
+
+          <FindProfileComponent />
+          <FindProfileComponent />
+
+          <FindProfileComponent />
+
+          <FindProfileComponent />
+
+          <FindProfileComponent />
+        </div>
+        <div className="profile-right">
+          <div className="head-section-profile">
+            <h2>Brides in Kerala</h2>
+          </div>
+          <ProfileRight />
+          <ProfileRight />
+
+          <ProfileRight />
+
+          <ProfileRight />
+        </div>
+      </div>
+      <Footer />
+    </>
   );
 };
 
-export default Hero;
+export default Profile;

@@ -1,328 +1,437 @@
-.findyourperfectmatch-Main {
+.main-find {
   width: 100%;
   background-color: #681e6a;
 }
-.match-heading {
-  margin-left: 102px;
-  color: #fff;
-  padding-top: 30px;
-  margin-bottom: 20px;
-}
-.selectbox-sections {
-  padding-bottom: 20px;
-  margin-left: 102px;
-}
-.selectbox-one {
-  margin-right: 25px;
-  width: 22%;
-  height: 35px;
-  border-radius: 7px;
-  padding: 0px 7px;
-  border: none;
-  outline: none;
-}
-
-.selectbox-one:focus {
-  border: none;
-}
-
-.selectbox-two {
-  margin-right: 25px;
-  width: 17%;
-  height: 35px;
-  border-radius: 7px;
-  padding: 0px 7px;
-  border: none;
-  outline: none;
-}
-
-.selectbox-one:focus {
-  border: none;
-}
-
-.selectbox-three {
-  margin-right: 25px;
-  width: 22%;
-  height: 35px;
-  border-radius: 7px;
-  padding: 0px 7px;
-  border: none;
-  outline: none;
-}
-
-.selectbox-one:focus {
-  border: none;
-}
-
-.search-button {
-  font-weight: 700;
-  padding: 0.5rem 2.9rem;
-  border-radius:9px;
-  border: none;
-  transition: all 300ms ease-in;
-  color: brown;
-  background-color: #ffd600;
-}
-
-.search-button:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-}
-/* ===================================================large screens================================================ */
-@media only screen and (min-width: 1024px) and (max-width: 1124px) {
-  .findyourperfectmatch-Main
-  {
-    /* background-color: #ffd600; */
+@media only screen and (max-width: 768px) {
+  .find-contents {
+    padding-left: 40px;
+    padding-bottom: 40px;
+    /* background-color: azure; */
   }
-  .match-heading
-  {
-    margin-left: 55px;
-  }
-  .selectbox-sections
-  {
-    margin-left: 55px;
-
-  }
-}
-
-@media (max-width: 768px) {
-    .findyourperfectmatch-Main {
-        width: 100%;
-        background-color: #681e6a;
-        display: flex;
-        flex-direction: column;
-      }
-      .match-heading {
-        margin-left: 102px;
-        color: #fff;
-        padding-top: 30px;
-        margin-bottom: 20px;
-      }
-      .selectbox-sections {
-        padding-bottom: 20px;
-        margin-left: 102px;
-        display: flex;
-        flex-direction: column;
-      }
-      .selectbox-one {
-        width: 72%;
-        height: 35px;
-        border-radius: 7px;
-        padding: 0px 7px;
-        border: none;
-        outline: none;
-        margin-bottom: 30px;
-      }
-      
-      .selectbox-one:focus {
-        border: none;
-      }
-      
-      .selectbox-two {
-        width: 57%;
-        height: 35px;
-        border-radius: 7px;
-        padding: 0px 7px;
-        border: none;
-        outline: none;
-        margin-bottom: 30px;
-        margin-left: 7%;
-
-      }
-      
-      .selectbox-one:focus {
-        border: none;
-      }
-      
-      .selectbox-three {
-        margin-right: 10px;
-        width: 72%;
-        height: 35px;
-        border-radius: 7px;
-        padding: 0px 7px;
-        border: none;
-        outline: none;
-        margin-bottom: 30px;
-
-      }
-      
-      .selectbox-one:focus {
-        border: none;
-      }
-      
-      .search-button {
-        font-weight: 700;
-        padding: 0.5rem 2.9rem;
-        border-radius:9px;
-        border: none;
-        width: 72%;
-        transition: all 300ms ease-in;
-        color: brown;
-        background-color: #ffd600;
-      }
-      .span-tag
-      {
-        margin-left: 20%;
-      }
-      
-      .search-button:hover {
-        cursor: pointer;
-        transform: scale(1.1);
-      }
-}
-/* ===================================================extra large screens============================================== */
-
-@media screen and (min-width: 1282px) {
-  .findyourperfectmatch-Main {
-    width: 100%;
-    background-color: #681e6a;
-    padding-left: 25px;
-  }
-  .match-heading {
-    margin-left: 0px;
-    color: #fff;
-    padding-top: 30px;
-    margin-bottom: 40px;
+  .find-contents p {
     font-size: 27px;
-  }
-  .selectbox-sections {
+    color: aliceblue;
+    padding-top: 30px;
+    display: flex;
     padding-bottom: 20px;
-    margin-left: 0px;
   }
-  .selectbox-one {
-    /* margin-left: 159px; */
-    margin-right: 25px;
-    width: 22%;
-    height: 45px;
-    border-radius: 7px;
-    padding: 0px 7px;
-    border: none;
-    outline: none;
+  .find-sub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 20px;
   }
 
-  .selectbox-one:focus {
-    border: none;
+  .find-div-1 {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0px 20px;
+    background-color: #fff;
+    transition: 0.3s;
   }
-  
-  .selectbox-two {
-    margin-right: 25px;
-    width: 17%;
-    height: 45px;
-    border-radius: 7px;
-    padding: 0px 7px;
-    border: none;
-    outline: none;
-  }
-  
-  .selectbox-one:focus {
-    border: none;
-  }
-  
-  .selectbox-three {
-    margin-right: 25px;
-    width: 22%;
-    height: 45px;
-    border-radius: 7px;
-    padding: 0px 7px;
-    border: none;
-    outline: none;
-  }
-  
-  .selectbox-one:focus {
-    border: none;
-  }
-  
-  .search-button {
-    font-weight: 700;
-    padding: 0.8rem 3.4rem;
-    border-radius:9px;
-    border: none;
-    transition: all 300ms ease-in;
-    color: brown;
-    background-color: #ffd600;
-    margin-bottom: 30px;
-  }
-  
-  .search-button:hover {
+  .find-div-1:hover {
+    background-color: #cb670a;
     cursor: pointer;
-    transform: scale(1.1);
   }
- 
+  .find-div-2 {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0px 20px;
+    background-color: #ffd600;
+    transition: 0.3s;
+  }
+  .find-div-2:hover {
+    background-color: #cb670a;
+    cursor: pointer;
+  }
+  .find-div-3 {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0px 20px;
+    background-color: #fff;
+    transition: 0.3s;
+  }
+  .find-div-3:hover {
+    background-color: #cb670a;
+    cursor: pointer;
+  }
+  .find-div-4 {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0px 20px;
+    background-color: #ffd600;
+    transition: 0.3s;
+  }
+  .find-div-4:hover {
+    background-color: #cb670a;
+    cursor: pointer;
+  }
+  .find-div-5 {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0px 20px;
+    background-color: #fff;
+    transition: 0.3s;
+  }
+  .find-div-5:hover {
+    background-color: #cb670a;
+    cursor: pointer;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .find-contents {
+    padding-left: 40px;
+    padding-bottom: 40px;
+    /* background-color: azure; */
+  }
+  .find-contents p {
+    font-size: 27px;
+    color: aliceblue;
+    padding-top: 30px;
+  }
+  .find-sub {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 20px;
+  }
+
+  .find-div-1 {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0px 20px;
+    background-color: #fff;
+    transition: 0.3s;
+  }
+  .find-div-1:hover {
+    background-color: #cb670a;
+    cursor: pointer;
+  }
+  .find-div-2 {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0px 20px;
+    background-color: #ffd600;
+    transition: 0.3s;
+  }
+  .find-div-2:hover {
+    background-color: #cb670a;
+    cursor: pointer;
+  }
+  .find-div-3 {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0px 20px;
+    background-color: #fff;
+    transition: 0.3s;
+  }
+  .find-div-3:hover {
+    background-color: #cb670a;
+    cursor: pointer;
+  }
+  .find-div-4 {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0px 20px;
+    background-color: #ffd600;
+    transition: 0.3s;
+  }
+  .find-div-4:hover {
+    background-color: #cb670a;
+    cursor: pointer;
+  }
+  .find-div-5 {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0px 20px;
+    background-color: #fff;
+    transition: 0.3s;
+  }
+  .find-div-5:hover {
+    background-color: #cb670a;
+    cursor: pointer;
+  }
 }
 
-@media screen and (min-width: 1800px) {
-  .findyourperfectmatch-Main {
-    width: 100%;
-    background-color: #681e6a;
-    padding-left: 105px;
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  .find-contents {
+    padding-left: 40px;
+    padding-bottom: 40px;
+    /* background-color: azure; */
   }
-  .match-heading {
-    margin-left: 0px;
-    color: #fff;
-    padding-top: 30px;
-    margin-bottom: 40px;
+  .find-contents p {
     font-size: 27px;
+    color: aliceblue;
+    padding-top: 30px;
+
   }
-  .selectbox-sections {
-    padding-bottom: 20px;
-    margin-left: 0px;
-  }
-  .selectbox-one {
-    /* margin-left: 159px; */
-    margin-right: 25px;
-    width: 22%;
-    height: 45px;
-    border-radius: 7px;
-    padding: 0px 7px;
-    border: none;
-    outline: none;
+  .find-sub {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
   }
 
-  .selectbox-one:focus {
-    border: none;
+  .find-div-1 {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0px 20px;
+    background-color: #fff;
+    transition: 0.3s;
   }
-  
-  .selectbox-two {
-    margin-right: 25px;
-    width: 17%;
-    height: 45px;
-    border-radius: 7px;
-    padding: 0px 7px;
-    border: none;
-    outline: none;
-  }
-  
-  .selectbox-one:focus {
-    border: none;
-  }
-  
-  .selectbox-three {
-    margin-right: 25px;
-    width: 22%;
-    height: 45px;
-    border-radius: 7px;
-    padding: 0px 7px;
-    border: none;
-    outline: none;
-  }
-  
-  .selectbox-one:focus {
-    border: none;
-  }
-  
-  .search-button {
-    font-weight: 700;
-    padding: 0.8rem 3.4rem;
-    border-radius:9px;
-    border: none;
-    transition: all 300ms ease-in;
-    color: brown;
-    background-color: #ffd600;
-    margin-bottom: 30px;
-  }
-  
-  .search-button:hover {
+  .find-div-1:hover {
+    background-color: #cb670a;
     cursor: pointer;
-    transform: scale(1.1);
+  }
+  .find-div-2 {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0px 20px;
+    background-color: #ffd600;
+    transition: 0.3s;
+  }
+  .find-div-2:hover {
+    background-color: #cb670a;
+    cursor: pointer;
+  }
+  .find-div-3 {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0px 20px;
+    background-color: #fff;
+    transition: 0.3s;
+  }
+  .find-div-3:hover {
+    background-color: #cb670a;
+    cursor: pointer;
+  }
+  .find-div-4 {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0px 20px;
+    background-color: #ffd600;
+    transition: 0.3s;
+  }
+  .find-div-4:hover {
+    background-color: #cb670a;
+    cursor: pointer;
+  }
+  .find-div-5 {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0px 20px;
+    background-color: #fff;
+    transition: 0.3s;
+  }
+  .find-div-5:hover {
+    background-color: #cb670a;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1536px) {
+  .find-contents {
+    padding-left: 40px;
+    padding-bottom: 40px;
+    /* background-color: azure; */
+  }
+  .find-contents p {
+    font-size: 27px;
+    color: aliceblue;
+  }
+  .find-sub {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .find-div-1 {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0px 20px;
+    background-color: #fff;
+    transition: 0.3s;
+  }
+  .find-div-1:hover {
+    background-color: #cb670a;
+    cursor: pointer;
+  }
+  .find-div-2 {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0px 20px;
+    background-color: #ffd600;
+    transition: 0.3s;
+  }
+  .find-div-2:hover {
+    background-color: #cb670a;
+    cursor: pointer;
+  }
+  .find-div-3 {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0px 20px;
+    background-color: #fff;
+    transition: 0.3s;
+  }
+  .find-div-3:hover {
+    background-color: #cb670a;
+    cursor: pointer;
+  }
+  .find-div-4 {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0px 20px;
+    background-color: #ffd600;
+    transition: 0.3s;
+  }
+  .find-div-4:hover {
+    background-color: #cb670a;
+    cursor: pointer;
+  }
+  .find-div-5 {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0px 20px;
+    background-color: #fff;
+    transition: 0.3s;
+  }
+  .find-div-5:hover {
+    background-color: #cb670a;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 1536px) {
+
+  .find-contents {
+    padding-left: 70px;
+    padding-bottom: 40px;
+    /* background-color: azure; */
+  }
+  .find-contents p {
+    font-size: 27px;
+    color: aliceblue;
+  }
+  .find-sub {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .find-div-1 {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0px 20px;
+    background-color: #fff;
+    transition: 0.3s;
+  }
+  .find-div-1:hover {
+    background-color: #cb670a;
+    cursor: pointer;
+  }
+  .find-div-2 {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0px 20px;
+    background-color: #ffd600;
+    transition: 0.3s;
+  }
+  .find-div-2:hover {
+    background-color: #cb670a;
+    cursor: pointer;
+  }
+  .find-div-3 {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0px 20px;
+    background-color: #fff;
+    transition: 0.3s;
+  }
+  .find-div-3:hover {
+    background-color: #cb670a;
+    cursor: pointer;
+  }
+  .find-div-4 {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0px 20px;
+    background-color: #ffd600;
+    transition: 0.3s;
+  }
+  .find-div-4:hover {
+    background-color: #cb670a;
+    cursor: pointer;
+  }
+  .find-div-5 {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0px 20px;
+    background-color: #fff;
+    transition: 0.3s;
+  }
+  .find-div-5:hover {
+    background-color: #cb670a;
+    cursor: pointer;
   }
 }
