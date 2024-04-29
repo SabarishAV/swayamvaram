@@ -1,112 +1,111 @@
 import React from "react";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import "./Trusted.css";
-const responsive = {
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3,
-    slidesToSlide: 3, // optional, default to 1.
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 768 },
-    items: 2,
-    slidesToSlide: 2, // optional, default to 1.
-  },
-  mobile: {
-    breakpoint: { max: 767, min: 464 },
-    items: 1,
-    slidesToSlide: 1, // optional, default to 1.
-  },
-};
+import { Carousel } from "primereact/carousel";
+import "primereact/resources/themes/saga-blue/theme.css";
+import "primereact/resources/primereact.min.css";
+import "./Truested.css";
+import slide from "../../assets/slide.png";
 
 const Trusted = () => {
+  const items = [
+    {
+      src: "https://via.placeholder.com/600x400?text=Image+1",
+      alt: "Image 1",
+      title:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta, veritatis vero deserunt aut error qui enim labore nihil harum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta.",
+      text: "Aishwarya",
+      place: "Calicut, Kerala",
+    },
+    {
+      src: "https://via.placeholder.com/600x400?text=Image+2",
+      alt: "Image 2",
+      title:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta, veritatis vero deserunt aut error qui enim labore nihil harum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta.",
+      text: "harshan",
+      place: "Malappuram, Kerala",
+    },
+    {
+      src: "https://via.placeholder.com/600x400?text=Image+3",
+      alt: "Image 3",
+      title:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta, veritatis vero deserunt aut error qui enim labore nihil harum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta.",
+      text: "Hari krishna",
+      place: "Vadakara, Kerala",
+    },
+    {
+      src: "https://via.placeholder.com/600x400?text=Image+1",
+      alt: "Image 1",
+      title:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta, veritatis vero deserunt aut error qui enim labore nihil harum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta.",
+      text: "Aishwarya",
+      place: "Calicut, Kerala",
+    },
+    {
+      src: "https://via.placeholder.com/600x400?text=Image+2",
+      alt: "Image 2",
+      title:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta, veritatis vero deserunt aut error qui enim labore nihil harum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta.",
+      text: "harshan",
+      place: "Malappuram, Kerala",
+    },
+    {
+      src: "https://via.placeholder.com/600x400?text=Image+3",
+      alt: "Image 3",
+      title:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta, veritatis vero deserunt aut error qui enim labore nihil harum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta.",
+      text: "Hari krishna",
+      place: "Vadakara, Kerala",
+    },
+  ];
+
+  const responsiveOptions = [
+    {
+      breakpoint: "1024px",
+      numVisible: 3,
+      numScroll: 1,
+    },
+    {
+      breakpoint: "768px",
+      numVisible: 2,
+      numScroll: 1,
+    },
+    {
+      breakpoint: "560px",
+      numVisible: 1,
+      numScroll: 1,
+    },
+  ];
+
+  const itemTemplate = (item) => (
+    <div className="carousel-item">
+      {/* <img src={item.src} alt={item.alt} style={{ width: "100%" }} /> */}
+      <img className="manslide" src={slide} alt="" />
+      <div className="carousel-content">
+        <p className="reviews">{item.title}</p>
+        <h3>{item.text}</h3>
+        <p style={{ color: "#000" }}>{item.place}</p>
+      </div>
+    </div>
+  );
   return (
-    <div className="parent">
-      <h1 className="trusted-heading">
-        Trusted by Over <span className="trusted-span">1600+ Couples</span>
-      </h1>
-      <Carousel
-        responsive={responsive}
-        autoPlay={true}
-        swipeable={true}
-        draggable={true}
-        showDots={false}
-        infinite={true}
-        partialVisible={false}
-        dotListClass="custom-dot-list-style"
-      >
-        <div className="rectangle-parent">
-          <div className="frame-child4" />
-          <img className="frame-child5" alt="" src="/rectangle-8762@2x.png" />
-          <div className="frame-child6" />
-          <div className="frame-child7" />
-          <div className="frame-child8" />
-          <div className="lorem-ipsum-dolor">
-            I had an amazing experience on the Trusted Section of the
-            matrimonial website. The thorough verification process gave me peace
-            of mind.
+    <div>
+      <section className="section">
+        <div className="container">
+          <Carousel
+            value={items}
+            numVisible={3}
+            numScroll={1}
+            responsiveOptions={responsiveOptions}
+            itemTemplate={itemTemplate}
+            circular={true}
+            autoplayInterval={3000}
+          />
+          <div className="see_all_btn">
+            <button>See all</button>
           </div>
-          <div className="anjana">Amaya</div>
-          <div className="malappuram-kerala">Malappuram, Kerala</div>
         </div>
-        <div className="rectangle-parent">
-          <div className="frame-child4" />
-          <img className="frame-child5" alt="" src="/rectangle-8762@2x.png" />
-          <div className="frame-child6" />
-          <div className="frame-child7" />
-          <div className="frame-child8" />
-          <div className="lorem-ipsum-dolor">
-            I felt confident exploring profiles, knowing that each member had
-            been carefully vetted for authenticity.
-          </div>
-          <div className="anjana">Febinas</div>
-          <div className="malappuram-kerala">Alappuza, Kerala</div>
-        </div>
-        <div className="rectangle-parent">
-          <div className="frame-child4" />
-          <img className="frame-child5" alt="" src="/rectangle-8762@2x.png" />
-          <div className="frame-child6" />
-          <div className="frame-child7" />
-          <div className="frame-child8" />
-          <div className="lorem-ipsum-dolor">
-            I can't thank the Trusted Section enough for the seamless and secure
-            experience it provided. 
-          </div>
-          <div className="anjana">anjana</div>
-          <div className="malappuram-kerala">Trivandrum, Kerala</div>
-        </div>
-        <div className="rectangle-parent">
-          <div className="frame-child4" />
-          <img className="frame-child5" alt="" src="/rectangle-8762@2x.png" />
-          <div className="frame-child6" />
-          <div className="frame-child7" />
-          <div className="frame-child8" />
-          <div className="lorem-ipsum-dolor">
-            The level of
-            trust and authenticity among members was palpable, making it easy
-            for me to navigate through profiles and find someone truly
-            compatible.
-          </div>
-          <div className="anjana">Swathi</div>
-          <div className="malappuram-kerala">Calicut, Kerala</div>
-        </div>
-        <div className="rectangle-parent">
-          <div className="frame-child4" />
-          <img className="frame-child5" alt="" src="/rectangle-8762@2x.png" />
-          <div className="frame-child6" />
-          <div className="frame-child7" />
-          <div className="frame-child8" />
-          <div className="lorem-ipsum-dolor">
-            The attention to detail in verifying member profiles ensured that my
-            interactions were meaningful and genuine, leading to promising
-            connections
-          </div>
-          <div className="anjana">Hari</div>
-          <div className="malappuram-kerala">Malappuram, Kerala</div>
-        </div>
-      </Carousel>
+      </section>
     </div>
   );
 };
+
 export default Trusted;

@@ -7,14 +7,14 @@ import Trusted from "./Components/Trusted/Trusted"
 
 const Home = () => {
   return (
-    <>
-      <Banner />
+   <>
+      <Banner/>
       <Offer />
       <Profile />
       <Trusted />
       <Choose />
       <Gallery />
-    </>
+   </>
   )
 }
 

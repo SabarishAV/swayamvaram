@@ -16,49 +16,51 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.Offers:hover {
-  cursor: pointer;
-}
-.p-one {
-  transition: all 500ms ease-in;
-}
-.p-two {
-  transition: all 500ms ease-in;
-}
-.p-three {
-  transition: all 500ms ease-in;
-}
-.p-four {
-  transition: all 500ms ease-in;
-}
-.p-five {
-  transition: all 500ms ease-in;
-}
-.p-one:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px #96650b;
-}
-.p-two:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px #96650b;
-}
-.p-three:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px #96650b;
-}
-.p-four:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px #96650b;
-}
-.p-five:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px #96650b;
-}
 .Offers p {
   background: #fff;
   color: #625e5e;
   padding: 10px 15px;
   border-radius: 8px;
+}
+.p-one {
+  transition: all 300ms ease-in;
+}
+.p-one:hover {
+  cursor: pointer;
+  transform: scale(1.1);  
+  box-shadow: #e25f08;
+}
+.p-two {
+  transition: all 300ms ease-in;
+}
+.p-two:hover {
+  cursor: pointer;
+  transform: scale(1.1);  
+  box-shadow: #e25f08;
+}
+.p-three {
+  transition: all 300ms ease-in;
+}
+.p-three:hover {
+  cursor: pointer;
+  transform: scale(1.1);  
+  box-shadow: #e25f08;
+}
+.p-four {
+  transition: all 300ms ease-in;
+}
+.p-four:hover {
+  cursor: pointer;
+  transform: scale(1.1);  
+  box-shadow: #e25f08;
+}
+.p-five {
+  transition: all 300ms ease-in;
+}
+.p-five:hover {
+  cursor: pointer;
+  transform: scale(1.1);  
+  box-shadow: #e25f08;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .Offers {

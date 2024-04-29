@@ -15,11 +15,6 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  cursor: pointer;
-}
-.navlinks ul:hover {
-  color: rgb(214, 87, 87);
-  cursor: pointer;
 }
 .sign_up {
   display: flex;

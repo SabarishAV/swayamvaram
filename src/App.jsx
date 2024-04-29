@@ -1,18 +1,19 @@
-import './App.css';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
-import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
-import Home from './pages/Home/Home';
-import  { ContactUs } from './pages/Contact/Contactprev';
-import Login from './pages/Login/Login';
-import Register from './pages/register/Register';
+import "./App.css";
+import Navbar from "./Components/Navbar/Navbar";
+
+import Footer from "./Components/Footer/Footer";
+import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
+import Home from "./Home";
+import ContactUs from "./Components/ContactUs/ContactUs";
+import Login from "./Components/Login/Login";
+import Register from "./Components/Register/Register";
 
 const Layout = () => {
   return (
     <div className="App">
       <div>
         <div className="white-gradient" />
-        <Header />
+        <Navbar />
         <Outlet />
         <Footer />
       </div>
@@ -20,39 +21,37 @@ const Layout = () => {
   );
 };
 
-
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <Layout />,
     children: [
       {
-        path: '/',
-        element: <Home/>,
+        path: "/",
+        element: <Home />,
       },
       {
-        path: '/contact',
+        path: "/contact",
         element: <ContactUs />,
       },
-      
+
       {
-        path: '/login',
+        path: "/login",
         element: <Login />,
       },
       {
-        path: '/sign-up',
+        path: "/sign-up",
         element: <Register />,
       },
     ],
   },
 ]);
 
-
 function App() {
   return (
-    <div>
+    <>
       <RouterProvider router={router} />
-    </div>
+    </>
   );
 }
 

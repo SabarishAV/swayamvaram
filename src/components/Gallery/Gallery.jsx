@@ -1,3 +1,4 @@
+import React from "react";
 import "./Gallery.css";
 import g1 from "../../assets/g1.png";
 import g2 from "../../assets/g2.png";

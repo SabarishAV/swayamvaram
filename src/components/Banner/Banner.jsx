@@ -34,19 +34,17 @@ const Banner = () => {
           >
             <img className="bannerimg" src={banner} alt="" />
           </motion.span>
-
           <div className="container">
             <div className="Banner_contents">
               <motion.span
                 className=""
-                variants={fadeIn("right", "tween", 1.7, 1)}
+                variants={fadeIn("right", "tween", 0.7, 1)}
               >
                 <h3>
                   Elevate your <br /> Love Story with <br />{" "}
                   <span style={{ color: "brown" }}>Swayamvaram.</span>
                 </h3>
               </motion.span>
-
               <p>
                 Where Destiny and Dedication Intertwine, <br />
                 Guiding Souls to Perfect Matches Divine. <br />
