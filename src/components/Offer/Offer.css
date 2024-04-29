@@ -1,0 +1,82 @@
+.Offer {
+  background: linear-gradient(to right, #521e6a, #a03bd0);
+}
+.Offer_heaf {
+  padding: 40px 0px 25px 0px;
+}
+.Offer_heaf h3 {
+  font-size: 27px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.Offers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.Offers:hover {
+  cursor: pointer;
+}
+.p-one {
+  transition: all 500ms ease-in;
+}
+.p-two {
+  transition: all 500ms ease-in;
+}
+.p-three {
+  transition: all 500ms ease-in;
+}
+.p-four {
+  transition: all 500ms ease-in;
+}
+.p-five {
+  transition: all 500ms ease-in;
+}
+.p-one:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #96650b;
+}
+.p-two:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #96650b;
+}
+.p-three:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #96650b;
+}
+.p-four:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #96650b;
+}
+.p-five:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #96650b;
+}
+.Offers p {
+  background: #fff;
+  color: #625e5e;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .Offers {
+    gap: 10px;
+  }
+}
+@media (min-width: 300px) and (max-width: 767px) {
+  .Offers {
+    gap: 10px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 575px) {
+  .Offer_heaf h3 {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+  .Offers {
+    gap: 15px;
+  }
+}

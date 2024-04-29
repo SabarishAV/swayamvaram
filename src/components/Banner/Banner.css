@@ -1,0 +1,74 @@
+.Banner {
+  background: linear-gradient(150.68deg, #d85b00, #ffd600);
+  position: relative;
+  overflow: hidden;
+}
+.bannerimg {
+  max-width: 700px;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+}
+.Banner_contents h3 {
+  font-size: 47px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #fff;
+  font-family: "Lucida Handwriting", cursive;
+}
+.Banner_contents h3 span {
+  color: #ffd600;
+}
+.Banner_contents p {
+  display: inline-block;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+.banner_img {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+.register_btn button {
+  background: #ffd600;
+  color: #762400;
+  padding: 15px 40px;
+  border-radius: 32px;
+  cursor: pointer;
+  transition: all 300ms ease-in;
+
+}
+.register_btn button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  border: 1px solid #762400;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .bannerimg {
+    display: none;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .bannerimg {
+    display: none;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 575px) {
+  .bannerimg {
+    display: none;
+  }
+  .Banner_contents h3 {
+    font-size: 32px;
+  }
+  .banner_img {
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .register_btn {
+    margin-bottom: 20px;
+  }
+}
