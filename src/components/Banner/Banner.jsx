@@ -55,7 +55,7 @@ const Banner = () => {
                 <img src={images2} alt="" />
               </div>
               <div className="register_btn">
-                <button>Register</button>
+                <a href="https://forms.gle/hYFtDPdQXCPzz7ez5" target="_blank"><button>Register</button></a>
               </div>
             </div>
           </div>

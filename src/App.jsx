@@ -1,12 +1,12 @@
 import "./App.css";
-import Navbar from "./Components/Navbar/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 
-import Footer from "./Components/Footer/Footer";
+import Footer from "./components/Footer/Footer";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./Home";
-import ContactUs from "./Components/ContactUs/ContactUs";
-import Login from "./Components/Login/Login";
-import Register from "./Components/Register/Register";
+import ContactUs from "./components/ContactUs/ContactUs";
+import Login from "./components/Login/Login";
+import Register from "./components/Register/Register";
 
 const Layout = () => {
   return (

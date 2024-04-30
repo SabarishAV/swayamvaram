@@ -8,37 +8,42 @@ import "./Profile.css";
 const Profile = () => {
   const card = [
     {
-      image: v1,
-      head: "Register your profile",
-      text: "Register your profile on Swayamvara for free in just a few steps.",
+      image: "fa-solid fa-user-plus",
+      head: "Registration",
+      text: "Sign up for our matrimonial event online or in person to begin your journey towards finding your perfect match.",
     },
     {
-      image: v2,
-      head: "Find your match",
-      text: "You can easily search your soulmate of your preference.",
+      image: "fa-solid fa-hands-holding",
+      head: "Personalized Care",
+      text: "Our team of expert trainers will provide personalized care, offering fitness advice and valuable suggestions to ensure you're at your best when meeting your match.",
     },
     {
-      image: v3,
-      head: "Contact",
-      text: "Contact them directly if the other person accept your profile.",
+      image: "fa-solid fa-hand-holding-heart",
+      head: "Matching",
+      text: "Our sophisticated matching algorithm will carefully analyze your preferences and characteristics to pair you with compatible potential partners.",
     },
     {
-      image: v4,
-      head: "Get married!",
-      text: "If everything aligns, take the next big step and get married!",
-    },
+      image: "fa-solid fa-heart",
+      head: "Meet Your Match",
+      text: "Once a suitable match is found, we'll arrange a meeting, providing guidance and support to ensure a successful encounter.",
+    },{
+      image: "fa-solid fa-handshake",
+      head: "Follow-up Support",
+      text: "After your initial meeting, we'll continue to offer support and assistance as you navigate your relationship, ensuring your journey towards love is smooth and fulfilling.",
+    }
   ];
   return (
     <div>
       <section className="section profileParent">
         <div className="container">
           <div className="Profile_Head">
-            <h3 className="head_Profile">How to match a profile?</h3>
+            <h3 className="head_Profile">How we match a profile?</h3>
           </div>
           <div className="Profile_cards">
             {card.map((item) => (
               <div className="Profile_Crad">
-                <img src={item.image} alt={item.head} />
+                {/* <img src={item.image} alt={item.head} /> */}
+                <i className={item.image}></i>
                 <h3>{item.head}</h3>
                 <p>{item.text}</p>
               </div>
