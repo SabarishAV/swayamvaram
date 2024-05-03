@@ -16,13 +16,13 @@ const Footer = () => {
                 <h4>Get in touch</h4>
                 <ul>
                   <li>
-                    <a href="#">Address: 4321 road xxxxxxx</a>
+                    <a href="#">Address: Devagiri healthcare & edu trust <br /> Juniorz,Chevayur <br /> Calicut - 673007</a>
                   </li>
                   <li>
-                    <a href="#">Phone: +9988776655</a>
+                    <a href="tel:7559800895">Phone: 7559800895</a>
                   </li>
                   <li>
-                    <a href="#">Email: info@example.com</a>
+                    <a href="mailto:swayamvaram24@gmail.com">Email: swayamvaram24@gmail.com</a>
                   </li>
                 </ul>
                 <div className="footer-images-brand">

@@ -69,3 +69,13 @@
     margin-bottom: 20px;
   }
 }
+#call{
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  font-size: 1.5rem;
+}
+#call a{
+  color: white;
+}
+#call a :hover{
+  color: grey;
+}

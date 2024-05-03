@@ -57,6 +57,13 @@ const Banner = () => {
               <div className="register_btn">
                 <a href="https://forms.gle/hYFtDPdQXCPzz7ez5" target="_blank"><button>Register</button></a>
               </div>
+              <br />
+              <h4>Register and meet your soulmate at an event specially hosted for you event date</h4>
+              <h4>Event Date : May 26, Sunday</h4>
+              <h4>Registration Closing Date : May 20, Sunday</h4>
+              <h4>Venue : Calicut</h4>
+              <br />
+              <h4 id="call">Call <a href="tel:7559800895">7559800895</a> for registrations</h4>
             </div>
           </div>
         </motion.div>
